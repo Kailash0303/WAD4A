@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ABC Coaching Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .ui-header {
+      background: #103356 !important;
+      color: white !important;
+      border: none;
+    }
+
+    .ui-footer {
+      background: #003366 !important;
+      color: white !important;
+      border: none;
+    }
+
+    .ui-content {
+      background: #f8f9fa;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: #103356;
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #333;
+    }
+
+    .btn-blue {
+      background: #00b894 !important;
+      color: white !important;
+      border-radius: 25px !important;
+    }
+
+    .testimonial {
+      background-color: #e3f2fd;
+      border-left: 5px solid #2196f3;
+      padding: 12px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .achievements {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .achievements .card {
+      border-left: 5px solid #00b894;
+    }
+
+    @media screen and (min-width: 600px) {
+      .achievements {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Home Page -->
+  <div data-role="page" id="home">
+
+    <div data-role="header" data-theme="b">
+      <h1>ABC Coaching Institute</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+      <div class="card">
+        <h3>Welcome to ABC Coaching</h3>
+        <p>Preparing students for NEET, JEE, and Foundation courses. Learn from the best and achieve your dreams.</p>
+      </div>
+
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>Empowering students with quality education, expert mentorship, and personalized guidance.</p>
+      </div>
+
+      <div class="card">
+        <h3>Why Choose Us?</h3>
+        <ul data-role="listview" data-inset="true">
+          <li>✅ Expert Faculty</li>
+          <li>✅ Digital Study Materials</li>
+          <li>✅ Weekly Mock Tests</li>
+          <li>✅ Personal Mentoring</li>
+        </ul>
+      </div>
+
+      <div class="testimonial">
+        <strong>🌟 Student Testimonial</strong>
+        <p>“Thanks to ABC Institute, I cracked NEET 2024 with top rank! – <em>Riya Patil</em>”</p>
+      </div>
+
+      <div class="card">
+        <h3>🏆 Our Achievements</h3>
+        <div class="achievements">
+          <div class="card">
+            <h4>95% Success Rate</h4>
+            <p>Year-on-year increase in student selections in NEET & JEE.</p>
+          </div>
+          <div class="card">
+            <h4>5000+ Students Trained</h4>
+            <p>Across India with 100% satisfaction feedback.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#courses" class="ui-btn btn-blue ui-icon-arrow-r ui-btn-icon-right ui-shadow">Explore Courses</a>
+    </div>
+
+    <div data-role="footer">
+      <h4>📍 Pune | 📞 +91-9876543210 | ✉️ abc@coaching.com</h4>
+    </div>
+  </div>
+
+  <!-- Courses Page -->
+  <div data-role="page" id="courses">
+
+    <div data-role="header">
+      <h1>Our Courses</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+      <div class="card">
+        <h3>📘 NEET UG Coaching</h3>
+        <p>Complete 1 & 2-year programs with test series, guidance, and in-depth study plans.</p>
+      </div>
+
+      <div class="card">
+        <h3>📗 JEE (Main & Advanced)</h3>
+        <p>Expert-level coaching for engineering aspirants with real-world application-based teaching.</p>
+      </div>
+
+      <div class="card">
+        <h3>📙 Foundation Batch</h3>
+        <p>Designed for 8th-10th class students to crack Olympiads, NTSE, and build strong fundamentals.</p>
+      </div>
+
+      <div class="card">
+        <h3>📕 Crash Courses</h3>
+        <p>Targeted short-term intensive programs to revise and boost final exam performance.</p>
+      </div>
+
+      <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all ui-shadow">Back to Home</a>
+    </div>
+
+    <div data-role="footer">
+      <h4>© 2025 ABC Coaching Institute</h4>
+    </div>
+  </div>
+
+</body>
+</html>
